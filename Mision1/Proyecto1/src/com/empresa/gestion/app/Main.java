@@ -3,8 +3,8 @@ import com.empresa.gestion.model.*;
 import com.empresa.gestion.service.NominaService;
 public class Main {
     public static void main(String[] args){
-        Empleado empleado1 = new Empleado("Juan", 30, true, 'M', 5000.00, 160);
-        Gerente gerente1 = new Gerente("Ana", 61, true, 'F', 10000.00, 160, 2000.00, "Ventas");
+        Empleado empleado1 = new Empleado(1,"Juan", 30, true, 'M', 5000.00, 160);
+        Gerente gerente1 = new Gerente(2,"Ana", 61, true, 'F', 10000.00, 160, 2000.00, "Ventas");
         empleado1.presentarse();
         gerente1.presentarse();
         NominaService nomina = new NominaService();
