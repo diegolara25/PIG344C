@@ -1,6 +1,6 @@
 <!-- <p>user.component works!</p>
 <pre>{{users | json }}</pre> -->
-<div>
+<!-- <div>
     <button class="btn btn-primary mb-4">Boton con Bootstrap</button>
 </div>
 
@@ -13,5 +13,22 @@
     @for (u of users; track u.id) {
         <li>{{u.name}}  {{u.email}}</li>
     }
-</ul>
+</ul> -->
 
+
+
+@for (u of users; track u.id) {
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{u.id}}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{u.name}}</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+            <a href="#" class="card-link">{{u.email}}</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+}
+
+
+   
