@@ -9,13 +9,13 @@ public class App {
 
         Scanner sc = new Scanner(System.in);
         LibroService service = new LibroService();
-        int opcion = -1;
+        int opcion = -1; //te aseguras de que el programa entre al ciclo por primera vez sin activar ninguna opción del switch, Haz todo esto mientras la opción sea diferente de 0
         System.out.println("=== SISTEMA DE GESTION DE LIBROS ===");
         do{
             try {
 
                 mostrarMenu();
-                opcion = sc.nextInt();
+                opcion = sc.nextInt(); //Aquí es donde el -1 muere. El usuario escribe un 1, y ahora opcion vale 1.
 
                 switch (opcion) {
                     case 1:
@@ -48,7 +48,7 @@ public class App {
                 
             } catch (InputMismatchException e) {
                 System.out.println("Error debe ingresar un numero");
-                sc.nextLine();
+                sc.nextLine();// Limpia el "buffer" del teclado. Si no lo haces, el error se queda atrapado en el teclado y el programa entra en un bucle infinito de errores.
             } catch(Exception e){
                 System.out.println("Error inesperado"+ e.getMessage());
                 sc.nextLine();
