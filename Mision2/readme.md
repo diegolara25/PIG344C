@@ -47,3 +47,10 @@ server:
 17. dentro de query history coloco CREATE DATABASE energia_db;  en donde energia_db es el nombre de la base de datos que coloque dentro del archivo application.yml. y le doy en el boton de play y miramos si se creo la base de datos
 18. ahora dentro de postgress si me voy al primer icono al lado izquierdo de los 3 puntos "default workspace" vamos a server/postgress/database alli vere mi base de datos creada.
 
+19. Nos devolvemos al visual y vamos a crear las carpetas model,controller,repository para ello nos ubicamos sobre la carpeta energiapi damos clic contrario luego new folder y vamos creando una por una estas carpetas.
+20. Luego dentro de la carpeta Model damos clic contrario luego new file class y alli creamos el archivo User.java verificamos que se haya importado el paquete sino lo agregamos y luego importamos import jakarta.persistence.*;
+
+comando para correr el porgrama con spring-boot
+./mvnw spring-boot:run
+
+
